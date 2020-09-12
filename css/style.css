@@ -1,0 +1,720 @@
+@charset "utf-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* 共通のスタイル */
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.wrap {
+  width: 80%;
+  margin: 0 auto 50px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 12px;
+  border-radius: 1px;
+  padding: 8px 25px;
+  border: 1px solid;
+  display: inline-block;
+}
+
+.text {
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+/* ここから他のスタイルを記述 */
+/* header */
+header {
+  height: 50px;
+  background: #000;
+  line-height: 50px;
+}
+
+.logo {
+  color: #f2f2f2;
+  padding-left: 20px;
+}
+
+.nav__list {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 0 20px;
+}
+
+/* eyecatch */
+#eyecatch {
+  height: 600px;
+  background: url(../img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.eyecatch-msg {
+  color: #f2f2f2;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "ＭＳ ゴシック", sans-serif;
+  font-style: italic;
+  position: absolute;
+  top: 58%;
+  left: 10%;
+}
+
+.news-container {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 12px;
+}
+
+.news-item {
+  height: 50px;
+}
+
+.news-content {
+  width: 75%;
+  background: #f2f2f2;
+}
+
+.news-date {
+  padding: 0 3px; 
+}
+
+.news-text {
+  padding: 0 10px;
+}
+
+.news {
+  width: 25%;
+  background: #000;
+  color: #f2f2f2;
+  line-height: 50px;
+  text-align: center;
+}
+
+/* about */
+#about {
+  background: #000;
+  height: 360px;
+  position: relative;
+}
+
+.about__img {
+  width: 40%;
+  height: 85%;
+  position: absolute;
+  top: 25%;
+  right: 5%;
+}
+
+.about-content {
+  width: 57%;
+  color: #f2f2f2;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+  margin: 20px 0;
+}
+
+.about-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about-text {
+  padding: 25px 0;
+}
+
+.about__btn {
+  color: #000;
+  font-weight: bold;
+  background: #f2f2f2;
+  border-color: #f2f2f2;
+}
+
+/* service */
+#service {
+  height: 1120px;
+  margin-top: 100px;
+  background: #ddd;
+}
+
+#service .section-title {
+  padding-top: 20px;
+}
+
+.business {
+  width: 45%;
+  height: 250px;
+  background: #f2f2f2;
+  box-sizing: border-box;
+  padding: 65px;
+  font-size: 12px;
+  position: absolute;
+}
+
+.business-subtitle {
+  padding: 12px 0;
+}
+
+.service__btn {
+  color: #000;
+  border-color: #000;
+}
+
+.service__btn-container {
+  text-align: right;
+  padding: 10px 0;
+}
+
+.service__img {
+  width: 50%;
+}
+
+.service-content {
+  margin-bottom: 150px;
+  position: relative;
+}
+
+.service-content-right {
+  justify-content: flex-end;
+}
+
+.business-right {
+  left: 15%;
+}
+
+.business-left {
+  top: 23%;
+  left: 40%;
+}
+
+/* info */
+#info {
+  padding: 100px 0;
+}
+
+.info-content {
+  color: #f2f2f2;
+  width: 48%;
+  height: 200px;
+  text-align: center;
+}
+
+#info .section-title {
+  padding-top: 60px;
+}
+
+.sub-section-title {
+  font-weight: bold;
+}
+
+.company {
+  background: url(../img/company.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.recruit {
+  background: url(../img/recruit.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* faq */
+.faq {
+  background: #000;
+  color: #f2f2f2;
+  height: 80px;
+  line-height: 80px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.faq td {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.faq th {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.faq table {
+  width: 95%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* contact */
+#contact {
+  height: 250px;
+  background: url(../img/contact-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 150px 0;
+}
+
+.msg {
+  font-size: 24px;
+  padding: 30px 0;
+}
+
+.contact__btn {
+  color: #f2f2f2;
+  border-color: #f2f2f2;
+  margin: 30px 0;
+}
+
+/* footer */
+footer {
+  height: 100px;
+  line-height: 50px;
+  background: #000;
+}
+
+.right {
+  color: #f2f2f2;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 768px) {
+  /* font-size */
+  .text,
+  .right {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .logo,
+  .sub-section-title {
+    font-size: 1.2rem;
+  }
+
+  .about-title {
+    font-size: 2.2rem;
+    line-height: 1.5em;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 12px 35px;
+  }
+
+  .msg {
+    font-size: 2.8rem;
+    padding: 50px 0;
+  }
+
+  /* header */
+  #hamburger {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  #hamburger span {
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+  }
+
+  #hamburger span:nth-of-type(1) {
+    top: 10px;
+  }
+
+  #hamburger span:nth-of-type(2) {
+    top: 20px;
+  }
+
+  #hamburger span:nth-of-type(3) {
+    top: 30px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  /* eyecatch */ 
+  .eyecatch-msg {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 4rem;
+    width: 80%;
+    text-align: center;
+  }
+
+  .news-container {
+    width: 100%;
+  }
+
+  /* about */
+  #about {
+    height: 470px;
+  }
+  .about-content {
+    width: 75%;
+    left: 50%;
+  }
+
+  .about__img {
+    width: 35%;
+    height: auto;
+    top: 75%;
+    right: 10%;
+  }
+
+  /* service */ 
+  #service {
+    height: 1520px;
+    margin-top: 40px;
+  }
+
+  .service__img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .business {
+    width: 90%;
+    top: 100%;
+    left: 5%;
+    padding: 30px 50px;
+  }
+
+  .service-content:nth-of-type(2) {
+    top: 10%;
+  }
+
+  /* info */
+  #info {
+    padding: 50px 0;
+  }
+
+  .info-content {
+    width: 100%;
+  }
+
+  /* faq */ 
+  .faq {
+    width: 95%;
+    height: 120px;
+    line-height: 120px;
+    margin-bottom: 50px;
+  }
+
+  .faq table {
+    width: 80%;
+  }
+
+  /* contact */
+  #contact {
+    height: 300px;
+  }
+
+  .contact-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* footer */
+  .footer-logo {
+    margin: 0 auto;
+  }
+}
+
+/* モバイル */
+@media screen and (max-width: 480px) {
+  /* eyecatch */
+  .news-item {
+    height: 80px;
+  }
+
+  .news {
+    line-height: 80px;
+  }
+
+  .news-text {
+    padding: 0 20px;
+  }
+
+  /* about */
+  #about {
+    height: 530px;
+  }
+
+  .about__img {
+    width: 40%;
+    top: 89%;
+    right: 6%;
+  }
+
+  /* service */
+  #service {
+    height: 1200px;
+  }
+
+  .service-content:nth-of-type(2) {
+    top: 12%;
+  }
+
+  .business {
+    padding: 20px 40px;
+    height: 300px;
+  }
+
+  .service-content:nth-of-type(2) {
+    top: 15%;
+  }
+
+  /* contact */
+  #contact {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* eyecatch */
+  .news-item {
+    height: 100px;
+  }
+
+  .news {
+    line-height: 100px;
+  }
+
+  /* about */ 
+  #about {
+    height: 600px;
+  }
+
+  .about__img {
+    top: 95%;
+  }
+
+  /* service */
+  #service {
+    height: 1100px;
+  }
+
+  /* footer */
+  .right {
+    font-size: 0.8rem;
+  }
+}
