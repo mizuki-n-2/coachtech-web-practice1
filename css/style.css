@@ -238,6 +238,23 @@ header {
   padding: 0 20px;
 }
 
+.menu {
+  display: none;
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+}
+
+.menu a {
+  color: #484848;
+  font-size: 1.2rem;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
 /* eyecatch */
 #eyecatch {
   height: 600px;
@@ -546,7 +563,23 @@ footer {
     top: 30px;
   }
 
-  nav {
+  #hamburger.open span:nth-of-type(1) {
+    top: 20px;
+    transform: rotate(-45deg);
+    transition: 0.4s;
+  }
+
+  #hamburger.open span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  #hamburger.open span:nth-of-type(3) {
+    top: 20px;
+    transform: rotate(45deg);
+    transition: 0.4s;
+  }
+
+  .header__nav {
     display: none;
   }
 
